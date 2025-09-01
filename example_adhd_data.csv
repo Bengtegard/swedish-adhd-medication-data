@@ -1,0 +1,61 @@
+År;Läkemedel;Region;Kön;Ålder;Patienter/1000 invånare
+2023;C02AC02 Guanfacin;Stockholm;Män;15-19;8.45
+2023;C02AC02 Guanfacin;Stockholm;Kvinnor;15-19;6.01
+2023;C02AC02 Guanfacin;Stockholm;Båda könen;15-19;7.26
+2023;C02AC02 Guanfacin;Skåne;Män;15-19;7.99
+2023;C02AC02 Guanfacin;Skåne;Kvinnor;15-19;6.43
+2023;C02AC02 Guanfacin;Skåne;Båda könen;15-19;7.23
+2024;C02AC02 Guanfacin;Stockholm;Män;15-19;10.02
+2024;C02AC02 Guanfacin;Stockholm;Kvinnor;15-19;7.55
+2024;C02AC02 Guanfacin;Stockholm;Båda könen;15-19;8.82
+2024;C02AC02 Guanfacin;Skåne;Män;15-19;8.96
+2024;C02AC02 Guanfacin;Skåne;Kvinnor;15-19;7.24
+2024;C02AC02 Guanfacin;Skåne;Båda könen;15-19;8.12
+2023;N06BA12 Lisdexamfetamin;Stockholm;Män;15-19;36.62
+2023;N06BA12 Lisdexamfetamin;Stockholm;Kvinnor;15-19;43.54
+2023;N06BA12 Lisdexamfetamin;Stockholm;Båda könen;15-19;39.98
+2023;N06BA12 Lisdexamfetamin;Skåne;Män;15-19;25.73
+2023;N06BA12 Lisdexamfetamin;Skåne;Kvinnor;15-19;29.86
+2023;N06BA12 Lisdexamfetamin;Skåne;Båda könen;15-19;27.74
+2024;N06BA12 Lisdexamfetamin;Stockholm;Män;15-19;41.43
+2024;N06BA12 Lisdexamfetamin;Stockholm;Kvinnor;15-19;51.65
+2024;N06BA12 Lisdexamfetamin;Stockholm;Båda könen;15-19;46.39
+2024;N06BA12 Lisdexamfetamin;Skåne;Män;15-19;28.65
+2024;N06BA12 Lisdexamfetamin;Skåne;Kvinnor;15-19;34.43
+2024;N06BA12 Lisdexamfetamin;Skåne;Båda könen;15-19;31.47
+2023;N06BA09 Atomoxetin;Stockholm;Män;15-19;7.9
+2023;N06BA09 Atomoxetin;Stockholm;Kvinnor;15-19;8.75
+2023;N06BA09 Atomoxetin;Stockholm;Båda könen;15-19;8.31
+2023;N06BA09 Atomoxetin;Skåne;Män;15-19;7.24
+2023;N06BA09 Atomoxetin;Skåne;Kvinnor;15-19;7.04
+2023;N06BA09 Atomoxetin;Skåne;Båda könen;15-19;7.14
+2024;N06BA09 Atomoxetin;Stockholm;Män;15-19;8.13
+2024;N06BA09 Atomoxetin;Stockholm;Kvinnor;15-19;9.78
+2024;N06BA09 Atomoxetin;Stockholm;Båda könen;15-19;8.93
+2024;N06BA09 Atomoxetin;Skåne;Män;15-19;7.7
+2024;N06BA09 Atomoxetin;Skåne;Kvinnor;15-19;7.19
+2024;N06BA09 Atomoxetin;Skåne;Båda könen;15-19;7.45
+2023;N06BA04 Metylfenidat;Stockholm;Män;15-19;52.3
+2023;N06BA04 Metylfenidat;Stockholm;Kvinnor;15-19;55.59
+2023;N06BA04 Metylfenidat;Stockholm;Båda könen;15-19;53.89
+2023;N06BA04 Metylfenidat;Skåne;Män;15-19;39.81
+2023;N06BA04 Metylfenidat;Skåne;Kvinnor;15-19;38.21
+2023;N06BA04 Metylfenidat;Skåne;Båda könen;15-19;39.03
+2024;N06BA04 Metylfenidat;Stockholm;Män;15-19;54.86
+2024;N06BA04 Metylfenidat;Stockholm;Kvinnor;15-19;61.96
+2024;N06BA04 Metylfenidat;Stockholm;Båda könen;15-19;58.31
+2024;N06BA04 Metylfenidat;Skåne;Män;15-19;42.38
+2024;N06BA04 Metylfenidat;Skåne;Kvinnor;15-19;40.44
+2024;N06BA04 Metylfenidat;Skåne;Båda könen;15-19;41.44
+2023;N06BA02 Dexamfetamin;Stockholm;Män;15-19;3.23
+2023;N06BA02 Dexamfetamin;Stockholm;Kvinnor;15-19;3.34
+2023;N06BA02 Dexamfetamin;Stockholm;Båda könen;15-19;3.28
+2023;N06BA02 Dexamfetamin;Skåne;Män;15-19;1.22
+2023;N06BA02 Dexamfetamin;Skåne;Kvinnor;15-19;1.06
+2023;N06BA02 Dexamfetamin;Skåne;Båda könen;15-19;1.14
+2024;N06BA02 Dexamfetamin;Stockholm;Män;15-19;2.58
+2024;N06BA02 Dexamfetamin;Stockholm;Kvinnor;15-19;2.65
+2024;N06BA02 Dexamfetamin;Stockholm;Båda könen;15-19;2.62
+2024;N06BA02 Dexamfetamin;Skåne;Män;15-19;1.19
+2024;N06BA02 Dexamfetamin;Skåne;Kvinnor;15-19;1.77
+2024;N06BA02 Dexamfetamin;Skåne;Båda könen;15-19;1.48

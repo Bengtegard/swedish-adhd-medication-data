@@ -253,13 +253,7 @@ def convert_json_to_csv(
     input_json: str = "adhd_medication_2006-2024.json",
     output_csv: str = "adhd_medication_flat.csv",
 ) -> None:
-    """
-    Convert ADHD medication data from JSON to flattened CSV.
-    
-    Args:
-        input_json: Path to input JSON file
-        output_csv: Path to output CSV file
-    """
+    """Convert ADHD medication data from JSON to flattened CSV."""
     logger.info(f"Converting {input_json} to {output_csv}")
     
     try:
@@ -267,6 +261,28 @@ def convert_json_to_csv(
             data = json.load(f)
             
         logger.info(f"Loaded {len(data)} medications from JSON")
+        
+        # Extract unique values from actual data instead of defaults
+        all_years = set()
+        all_regions = set()
+        all_genders = set()
+        all_ages = set()
+        
+        for records in data.values():
+            for record in records:
+                all_years.add(record["ar"])
+                all_regions.add(record["regionId"])
+                all_genders.add(record["konId"])
+                all_ages.add(record["alderId"])
+        
+        # Convert to sorted lists
+        data_years = sorted(all_years)
+        data_regions = sorted(all_regions)
+        data_genders = sorted(all_genders)
+        data_ages = sorted(all_ages)
+        
+        logger.info(f"Data spans: {min(data_years)}-{max(data_years)}, "
+                   f"{len(data_regions)} regions, {len(data_ages)} age groups")
         
         with open(output_csv, "w", newline="", encoding="utf-8") as csvfile:
             writer = csv.writer(csvfile, delimiter=";")
@@ -283,18 +299,17 @@ def convert_json_to_csv(
                 
                 logger.debug(f"Processing {med_name}: {len(records)} records")
                 
-                # Index existing records by (year, region, gender, age)
+                # Index existing records
                 record_map = {
                     (r["ar"], r["regionId"], r["konId"], r["alderId"]): r
                     for r in records
                 }
                 
-                # Pick one ATC code (same for all records in med_name)
                 sample_atc = records[0]["atcId"] if records else ""
                 
-                # Loop over all combinations (years × regions × genders × ages)
+                # Loop over combinations FROM YOUR DATA, not defaults
                 for ar, region_id, kon_id, alder_id in itertools.product(
-                    DEFAULT_YEARS, REGION_MAP.keys(), KON_MAP.keys(), ALDER_MAP.keys()
+                    data_years, data_regions, data_genders, data_ages
                 ):
                     r = record_map.get((ar, region_id, kon_id, alder_id), None)
                     varde_raw = r.get("varde") if r else None
@@ -319,8 +334,6 @@ def convert_json_to_csv(
         raise
     except Exception as e:
         logger.error(f"Error converting to CSV: {e}")
-        raise
-
 
 def save_to_json(
     data: Dict[str, List[Dict]], 

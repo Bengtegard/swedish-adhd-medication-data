@@ -1,0 +1,58 @@
+"ADHD Medication Surge: An Interactive Analysis"
+Vad som gör det speciellt:
+
+18 års trenddata - Du kan visa exakt när och var explosionen började
+Multi-dimensionell analys - Ålder, region, tid samtidigt
+AI-powered insights - Anomaly detection för att hitta "breakpoints" när ökningen accelererade
+
+Teknisk stack:
+
+Streamlit - Clean, elegant interface
+Plotly - Interaktiva 3D-visualiseringar (tid/ålder/region)
+Scikit-learn - Time series analysis, changepoint detection
+Pandas - Smart data manipulation
+
+Killer features:
+
+"Play button" - Animerad karta över Sverige som visar spridningen över tid
+Age cohort tracker - Följ specifika åldersgrupper genom tiden
+Breakpoint detector - AI hittar exakt när trenden förändrades i varje region
+"What if" scenarios - Prediktion framåt baserat på olika antaganden
+
+Portfolio-värdet:
+
+Visar datavisualisering, AI, och samhällsrelevans
+Tekniskt imponerande men koncept alla förstår
+Går att presentera för både tekniker OCH allmänheten
+
+
+Vad som gör det elegant:
+
+Enkel men kraftfull visualization - Interaktiv tidsaxel som visar dramatiska förändringar
+AI-komponent: Predictive modeling - "Om trenden fortsätter, hur ser det ut 2030?"
+Samhällsrelevans - Alla undrar över denna ökning, men ingen visualiserar det på ett engagerande sätt
+
+Teknisk implementation:
+
+Plotly/Dash för interaktiva visualiseringar
+Machine Learning för trendanalys och prediktion
+Streamlit för clean web interface
+Time series analysis för att identifiera breakpoints när ökningen accelererade
+
+Potential insights:
+
+Kön/åldersspecifika mönster
+Regional variation
+Korrelation med andra faktorer (skolstress, pandemi, etc.)
+Jämförelse med andra länder
+
+URL
+DATA = https://sdb.socialstyrelsen.se/if_lak/val.aspx
+Inspo = https://lakartidningen.se/aktuellt/nyheter/2024/05/diagnosexplosion-kan-leda-till-att-fler-far-skriva-ut-adhd-lakemedel/
+
+Plotly - skapa interaktiv karta:
+https://plotly.com/python/tile-county-choropleth/
+https://dash.plotly.com/ 
+
+
+När du använder våra uppgifter måste du ange oss som källa. Skriv då så här: Läkemedel [Socialstyrelsens statistikdatabas]. Stockholm: Socialstyrelsen. [citerad: datum och klockslag].

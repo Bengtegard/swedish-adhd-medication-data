@@ -62,7 +62,7 @@ crontab -e
 # Add: 0 2 15 1 * /full/path/to/schedule_annual_fetch.sh
 ```
 
-## Testing
+## Testing a specific sample
 
 ```bash
 python test_adhd_fetcher.py

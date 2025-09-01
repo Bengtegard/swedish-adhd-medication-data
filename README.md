@@ -39,7 +39,9 @@ That's it! You'll get:
 - `adhd_fetcher.log` - What happened during the run
 
 When using the data, please cite it as:
+
 Läkemedel [Socialstyrelsens statistikdatabas]. Stockholm: Socialstyrelsen. [citerad: YYYY-MM-DD HH:MM].
+
 Replace YYYY-MM-DD HH:MM with the date and time when you accessed the data.
 
 ## Automation

@@ -109,6 +109,7 @@ Perfect for Excel, R, Python pandas, or whatever you use for analysis.
 ## Why I built this
 
 Socialstyrelsen has excellent data, but their website makes it hard to analyze specific medications by ATC code. This tool fixes that.
+
 ---
 
 *Data comes from Socialstyrelsen's official API. Läkemedel [Socialstyrelsens statistikdatabas]. Stockholm: Socialstyrelsen. [citerad: 01/09/2025 och 13:37].*

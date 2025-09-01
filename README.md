@@ -51,7 +51,7 @@ chmod +x schedule_annual_fetch.sh
 # 3. Test it
 ./schedule_annual_fetch.sh
 
-# 4. Add to crontab (runs January 15th at 2 AM)
+# 4. Add to crontab (runs January 15th at 02:00 AM)
 crontab -e
 # Add: 0 2 15 1 * /full/path/to/schedule_annual_fetch.sh
 ```

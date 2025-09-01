@@ -72,13 +72,22 @@ python test_adhd_fetcher.py
 If you want to specify your data:
 
 ```python
-from adhd_data_fetcher import fetch_adhd_medication_data
+from adhd_data_fetcher import fetch_adhd_medication_data,
+save_to_json, convert_json_to_csv
 
 # Just Stockholm and Skåne, age 15-19, recent years
 data = fetch_adhd_medication_data(
     regions=[1, 12],  # Stockholm, Skåne
     years=[2023, 2024],
     age_groups=[4]           # 15-19 age group
+)
+
+save_to_json(data, "example_adhd_data.json")
+
+# Convert JSON to CSV
+convert_json_to_csv(
+    input_json="example_adhd_data.json",
+    output_csv="example_adhd_data.csv"
 )
 ```
 
@@ -87,15 +96,19 @@ data = fetch_adhd_medication_data(
 Your CSV will look like this:
 ```csv
 År;Läkemedel;Region;Kön;Ålder;Patienter/1000 invånare
-2024;N06BA04 Metylfenidat;Stockholm;Män;10-14;45.2
+2023;C02AC02 Guanfacin;Stockholm;Män;15-19;8.45
+2023;C02AC02 Guanfacin;Stockholm;Kvinnor;15-19;6.01
+2023;C02AC02 Guanfacin;Stockholm;Båda könen;15-19;7.26
+2023;C02AC02 Guanfacin;Skåne;Män;15-19;7.99
+2023;C02AC02 Guanfacin;Skåne;Kvinnor;15-19;6.43
+2023;C02AC02 Guanfacin;Skåne;Båda könen;15-19;7.23
 ```
 
 Perfect for Excel, R, Python pandas, or whatever you use for analysis.
 
 ## Why I built this
 
-Socialstyrelsen has great data but their website isn't great for bulk downloads. This script handles all the pagination, retries, and data cleaning so you don't have to click through hundreds of pages.
-
+Socialstyrelsen has excellent data, but their website makes it hard to analyze specific medications by ATC code. This tool fixes that.
 ---
 
 *Data comes from Socialstyrelsen's official API. Läkemedel [Socialstyrelsens statistikdatabas]. Stockholm: Socialstyrelsen. [citerad: 01/09/2025 och 13:37].*

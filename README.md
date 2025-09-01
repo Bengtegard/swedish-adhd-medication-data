@@ -38,12 +38,6 @@ That's it! You'll get:
 - `adhd_medication_flat.csv` - Clean spreadsheet format
 - `adhd_fetcher.log` - What happened during the run
 
-When using the data, please cite it as:
-
-Läkemedel [Socialstyrelsens statistikdatabas]. Stockholm: Socialstyrelsen. [citerad: YYYY-MM-DD HH:MM].
-
-Replace YYYY-MM-DD HH:MM with the date and time when you accessed the data.
-
 ## Automation
 
 To automatically receive annual data, use the included cron script.
@@ -106,6 +100,7 @@ Your CSV will look like this:
 
 Perfect for Excel, R, Python pandas, or whatever you use for analysis.
 
+*Please cite the data as: Läkemedel [Socialstyrelsens statistikdatabas]. Stockholm: Socialstyrelsen. [citerad: YYYY-MM-DD HH:MM]*
 ## Why I built this
 
 Socialstyrelsen has excellent data, but their website makes it hard to analyze specific medications by ATC code. This tool fixes that.

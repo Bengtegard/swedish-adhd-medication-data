@@ -1,0 +1,88 @@
+# ADHD Medication Data from Socialstyrelsen's API
+
+A simple Python script I built to fetch ADHD medication prescription data from Sweden's National Board of Health and Welfare. Perfect for researchers, students, or anyone curious about ADHD medication trends in Sweden.
+
+## What it does
+
+Downloads prescription data for the 5 main ADHD medications:
+- Metylfenidat (Ritalin, Concerta)
+- Lisdexamfetamin (Vyvanse) 
+- Atomoxetin (Strattera)
+- Dexamfetamin (Dexedrine)
+- Guanfacin (Intuniv)
+
+Gets you clean data showing patients per 1000 inhabitants by region, age, gender, and year (2006-2024).
+
+## Quick start
+
+```bash
+# Download the script
+git clone https://github.com/yourusername/socialstyrelsen_adhd.git
+cd socialstyrelsen_adhd
+
+# Install what you need
+pip install requests
+
+# Run it
+python adhd_data_fetcher.py
+```
+
+That's it! You'll get:
+- `adhd_medication_2006-2024.json` - Raw data  
+- `adhd_medication_flat.csv` - Clean spreadsheet format
+- `adhd_fetcher.log` - What happened during the run
+
+## Automation
+
+Want fresh data automatically? Use the included cron script:
+```bash
+# 1. Edit paths in the script
+nano schedule_annual_fetch.sh
+
+# 2. Make it executable
+chmod +x schedule_annual_fetch.sh
+
+# 3. Test it
+./schedule_annual_fetch.sh
+
+# 4. Add to crontab (runs January 15th at 2 AM)
+crontab -e
+# Add: 0 2 15 1 * /full/path/to/schedule_annual_fetch.sh
+```
+
+## Testing
+
+```bash
+python test_adhd_fetcher.py
+
+## Custom usage
+
+Want specific data? Easy:
+
+```python
+from adhd_data_fetcher import fetch_adhd_medication_data
+
+# Just Stockholm and Skåne, recent years
+data = fetch_adhd_medication_data(
+    regions=[1, 12],  # Stockholm, Skåne
+    years=[2020, 2021, 2022, 2023, 2024]
+)
+```
+
+## The data you get
+
+Your CSV will look like this:
+```csv
+År;Läkemedel;Region;Kön;Ålder;Patienter/1000 invånare
+2024;N06BA04 Metylfenidat;Stockholm;Män;10-14;45.2
+```
+
+Perfect for Excel, R, Python pandas, or whatever you use for analysis.
+
+## Why I built this
+
+Socialstyrelsen has great data but their website isn't great for bulk downloads. This script handles all the pagination, retries, and data cleaning so you don't have to click through hundreds of pages.
+
+---
+
+*Data comes from Socialstyrelsen's official API. Läkemedel [Socialstyrelsens statistikdatabas]. Stockholm: Socialstyrelsen. [citerad: 01/09/2025 och 13:37].*

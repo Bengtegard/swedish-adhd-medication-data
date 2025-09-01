@@ -13,12 +13,18 @@ Downloads prescription data for the 5 main ADHD medications:
 
 Gets you clean data showing patients per 1000 inhabitants by region, age, gender, and year (2006-2024).
 
-## Quick start
+## Quick Start
+
+### Requirements
+- Python 3.12
+- Install dependencies:
 
 ```bash
+pip install -r requirements.txt
+
 # Download the script
-git clone https://github.com/yourusername/socialstyrelsen_adhd.git
-cd socialstyrelsen_adhd
+git clone https://github.com/bengtegard/swedish-adhd-medication-data.git
+cd swedish-adhd-medication-data
 
 # Install what you need
 pip install requests
@@ -32,9 +38,13 @@ That's it! You'll get:
 - `adhd_medication_flat.csv` - Clean spreadsheet format
 - `adhd_fetcher.log` - What happened during the run
 
+When using the data, please cite it as:
+Läkemedel [Socialstyrelsens statistikdatabas]. Stockholm: Socialstyrelsen. [citerad: YYYY-MM-DD HH:MM].
+Replace YYYY-MM-DD HH:MM with the date and time when you accessed the data.
+
 ## Automation
 
-Want fresh data automatically? Use the included cron script:
+To automatically receive annual data, use the included cron script.
 ```bash
 # 1. Edit paths in the script
 nano schedule_annual_fetch.sh
@@ -57,15 +67,16 @@ python test_adhd_fetcher.py
 
 ## Custom usage
 
-Want specific data? Easy:
+If you want to specify your data:
 
 ```python
 from adhd_data_fetcher import fetch_adhd_medication_data
 
-# Just Stockholm and Skåne, recent years
+# Just Stockholm and Skåne, age 15-19, recent years
 data = fetch_adhd_medication_data(
     regions=[1, 12],  # Stockholm, Skåne
-    years=[2020, 2021, 2022, 2023, 2024]
+    years=[2023, 2024],
+    age_groups=[4]           # 15-19 age group
 )
 ```
 

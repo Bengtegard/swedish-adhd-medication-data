@@ -89,13 +89,13 @@ convert_json_to_csv(
 
 Your CSV will look like this:
 ```csv
-År;Läkemedel;Region;Kön;Ålder;Patienter/1000 invånare
-2023;C02AC02 Guanfacin;Stockholm;Män;15-19;8.45
-2023;C02AC02 Guanfacin;Stockholm;Kvinnor;15-19;6.01
-2023;C02AC02 Guanfacin;Stockholm;Båda könen;15-19;7.26
-2023;C02AC02 Guanfacin;Skåne;Män;15-19;7.99
-2023;C02AC02 Guanfacin;Skåne;Kvinnor;15-19;6.43
-2023;C02AC02 Guanfacin;Skåne;Båda könen;15-19;7.23
+År,Läkemedel,Region,Kön,Ålder,Patienter/1000 invånare
+2023,C02AC02 Guanfacin,Stockholm,Män,15-19,8.45
+2023,C02AC02 Guanfacin,Stockholm,Kvinnor,15-19,6.01
+2023,C02AC02 Guanfacin,Stockholm,Båda könen,15-19,7.26
+2023,C02AC02 Guanfacin,Skåne,Män,15-19,7.99
+2023,C02AC02 Guanfacin,Skåne,Kvinnor,15-19,6.43
+2023,C02AC02 Guanfacin,Skåne,Båda könen,15-19,7.23
 ```
 
 Perfect for Excel, R, Python pandas, or whatever you use for analysis.

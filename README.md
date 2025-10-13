@@ -107,4 +107,4 @@ Socialstyrelsen has excellent data, but their website makes it hard to analyze s
 
 ---
 
-*Data comes from Socialstyrelsen's official API. Läkemedel [Socialstyrelsens statistikdatabas]. Stockholm: Socialstyrelsen. [citerad: 01/09/2025 och 13:37].*
+*Data comes from Socialstyrelsen's official API. Läkemedel [Socialstyrelsens statistikdatabas]. Stockholm: Socialstyrelsen. [citerad: 01/09/2025 13:37].*

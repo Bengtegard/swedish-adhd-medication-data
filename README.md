@@ -1,10 +1,9 @@
 # ADHD Medication Data from Socialstyrelsen's API
 
-A simple Python script I built to fetch ADHD medication prescription data from Sweden's National Board of Health and Welfare. Perfect for researchers, students, or anyone curious about ADHD medication trends in Sweden.
-
+A simple Python script I built to fetch ADHD medication prescription data from Sweden's National Board of Health and Welfare.
 ## What it does
 
-Downloads prescription data for the 5 main ADHD medications:
+Downloads prescription data for the 5 ADHD medications currently approved in Sweden:
 - Metylfenidat (Ritalin, Concerta)
 - Lisdexamfetamin (Vyvanse) 
 - Atomoxetin (Strattera)
@@ -89,16 +88,14 @@ convert_json_to_csv(
 
 Your CSV will look like this:
 ```csv
-År;Läkemedel;Region;Kön;Ålder;Patienter/1000 invånare
-2023;C02AC02 Guanfacin;Stockholm;Män;15-19;8.45
-2023;C02AC02 Guanfacin;Stockholm;Kvinnor;15-19;6.01
-2023;C02AC02 Guanfacin;Stockholm;Båda könen;15-19;7.26
-2023;C02AC02 Guanfacin;Skåne;Män;15-19;7.99
-2023;C02AC02 Guanfacin;Skåne;Kvinnor;15-19;6.43
-2023;C02AC02 Guanfacin;Skåne;Båda könen;15-19;7.23
+År,Läkemedel,Region,Kön,Ålder,Patienter/1000 invånare
+2023,C02AC02 Guanfacin,Stockholm,Män,15-19,8.45
+2023,C02AC02 Guanfacin,Stockholm,Kvinnor,15-19,6.01
+2023,C02AC02 Guanfacin,Stockholm,Båda könen,15-19,7.26
+2023,C02AC02 Guanfacin,Skåne,Män,15-19,7.99
+2023,C02AC02 Guanfacin,Skåne,Kvinnor,15-19,6.43
+2023,C02AC02 Guanfacin,Skåne,Båda könen,15-19,7.23
 ```
-
-Perfect for Excel, R, Python pandas, or whatever you use for analysis.
 
 *Please cite the data as: Läkemedel [Socialstyrelsens statistikdatabas]. Stockholm: Socialstyrelsen. [citerad: YYYY-MM-DD HH:MM]*
 ## Why I built this
@@ -107,4 +104,4 @@ Socialstyrelsen has excellent data, but their website makes it hard to analyze s
 
 ---
 
-*Data comes from Socialstyrelsen's official API. Läkemedel [Socialstyrelsens statistikdatabas]. Stockholm: Socialstyrelsen. [citerad: 01/09/2025 och 13:37].*
+*Data comes from Socialstyrelsen's official API. Läkemedel [Socialstyrelsens statistikdatabas]. Stockholm: Socialstyrelsen. [citerad: 01/09/2025 13:37].*

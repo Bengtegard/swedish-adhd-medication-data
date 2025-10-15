@@ -1,10 +1,9 @@
 # ADHD Medication Data from Socialstyrelsen's API
 
-A simple Python script I built to fetch ADHD medication prescription data from Sweden's National Board of Health and Welfare. Perfect for researchers, students, or anyone curious about ADHD medication trends in Sweden.
-
+A simple Python script I built to fetch ADHD medication prescription data from Sweden's National Board of Health and Welfare.
 ## What it does
 
-Downloads prescription data for the 5 main ADHD medications:
+Downloads prescription data for the 5 ADHD medications currently approved in Sweden:
 - Metylfenidat (Ritalin, Concerta)
 - Lisdexamfetamin (Vyvanse) 
 - Atomoxetin (Strattera)

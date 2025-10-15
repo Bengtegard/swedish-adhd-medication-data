@@ -98,8 +98,6 @@ Your CSV will look like this:
 2023,C02AC02 Guanfacin,Skåne,Båda könen,15-19,7.23
 ```
 
-Perfect for Excel, R, Python pandas, or whatever you use for analysis.
-
 *Please cite the data as: Läkemedel [Socialstyrelsens statistikdatabas]. Stockholm: Socialstyrelsen. [citerad: YYYY-MM-DD HH:MM]*
 ## Why I built this
 

@@ -25,9 +25,6 @@ pip install -r requirements.txt
 git clone https://github.com/bengtegard/swedish-adhd-medication-data.git
 cd swedish-adhd-medication-data
 
-# Install what you need
-pip install requests
-
 # Run it
 python adhd_data_fetcher.py
 ```

@@ -53,23 +53,16 @@ crontab -e
 ```
 
 ## Testing a specific sample
-
-```bash
-python test_adhd_fetcher.py
-
-## Custom usage
-
 If you want to specify your data:
 
 ```python
-from adhd_data_fetcher import fetch_adhd_medication_data,
-save_to_json, convert_json_to_csv
+from adhd_data_fetcher import fetch_adhd_medication_data, save_to_json, convert_json_to_csv
 
-# Just Stockholm and Skåne, age 15-19, recent years
+# Just Stockholm and Skåne, age 15-19, for year 2023 and 2024
 data = fetch_adhd_medication_data(
     regions=[1, 12],  # Stockholm, Skåne
     years=[2023, 2024],
-    age_groups=[4]           # 15-19 age group
+    age_groups=[4]     # 15-19 age group
 )
 
 save_to_json(data, "example_adhd_data.json")
